@@ -1,0 +1,25 @@
+<root>
+  <Options>
+    <AutoRunRatePercent>30</AutoRunRatePercent>
+    <DatabaseType>sdb</DatabaseType>
+    <Width>800</Width>
+    <Height>600</Height>
+    <SequencerOptions>
+      <ControlSystems>
+        <ControlSystem>
+          <Code>ThenPlatform</Code>
+          <Settings>
+            <Setting>
+              <Name>PLC1</Name>
+              <Value>192.168.1.11</Value>
+            </Setting>
+            <Setting>
+              <Name>PLC2</Name>
+              <Value>192.168.1.12</Value>
+            </Setting>
+          </Settings>
+        </ControlSystem>
+      </ControlSystems>
+    </SequencerOptions>
+  </Options>
+</root>

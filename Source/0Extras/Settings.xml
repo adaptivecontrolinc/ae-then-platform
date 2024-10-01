@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<Root>
+  <Settings>
+    <Name>Demo</Name>
+    <Value>1</Value>
+  </Settings>
+  <Settings>
+    <Name>DisableMimicButtons</Name>
+    <Value>0</Value>
+  </Settings>
+  <Settings>
+    <Name>FillBlendEnabled</Name>
+    <Value>0</Value>
+  </Settings>
+  <Settings>
+    <Name>FillHotEnabled</Name>
+    <Value>1</Value>
+  </Settings>
+  <Settings>
+    <Name>HighTempDrainEnabled</Name>
+    <Value>1</Value>
+  </Settings>
+  <Settings>
+    <Name>Tank1HeatEnabled</Name>
+    <Value>0</Value>
+  </Settings>
+</Root>

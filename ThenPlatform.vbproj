@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E71D3879-D490-4FEE-A24E-FAB75AFD6886}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>ThenPlatform</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>DEBUG=1</DefineConstants>
+    <NoWarn>42030,42104,42108,42109,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>
+    </DefineConstants>
+    <NoWarn>42030,42104,42108,42109,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <DebugSymbols>true</DebugSymbols>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="MimicControls" />
+    <Import Include="MimicControls.Design" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Globalization.CultureInfo" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="Source\Common\Simulation.vb" />
+    <Compile Include="Source\Common\Smoothing.vb" />
+    <Compile Include="Source\Common\Timer.vb" />
+    <Compile Include="Source\Common\TimerUp.vb" />
+    <Compile Include="Source\Common\TODO\0TemperatureControllerNew\RampGenerator.vb" />
+    <Compile Include="Source\Common\TODO\0TemperatureControllerNew\TemperatureControl.vb" />
+    <Compile Include="Source\Common\LevelFlush.vb" />
+    <Compile Include="Source\Common\LidControlDelete.vb" />
+    <Compile Include="Source\Common\PidContactsNeed.vb" />
+    <Compile Include="Source\Common\TODO\acAddRecipe.vb" />
+    <Compile Include="Source\Common\TODO\acDrugroomPreview.vb" />
+    <Compile Include="Source\Common\TODO\acManualAddDrain.vb" />
+    <Compile Include="Source\Common\TODO\acManualAddFill.vb" />
+    <Compile Include="Source\Common\TODO\acManualAddTransfer.vb" />
+    <Compile Include="Source\Common\TODO\acManualReserveDrain.vb" />
+    <Compile Include="Source\Common\TODO\acManualReserveFill.vb" />
+    <Compile Include="Source\Common\TODO\acManualReserveHeat.vb" />
+    <Compile Include="Source\Common\TODO\acManualReserveTransfer.vb" />
+    <Compile Include="Source\Common\TODO\acRecipeRow.vb" />
+    <Compile Include="Source\Common\TODO\acRecipeSteps.vb" />
+    <Compile Include="Source\Common\TODO\acTemperatureControlContacts.vb" />
+    <Compile Include="Source\Common\TODO\0TemperatureControllerNew\PidControlML.vb" />
+    <Compile Include="Source\Common\DrugroomPreview.vb" />
+    <Compile Include="Source\Common\BlendControl.vb" />
+    <Compile Include="Source\Commands\Add Tank Commands\AD.vb" />
+    <Compile Include="Source\Commands\Add Tank Commands\AddControlDelete.vb" />
+    <Compile Include="Source\Commands\Add Tank Commands\AddRecipeDelete.vb" />
+    <Compile Include="Source\Commands\Add Tank Commands\AddRecipeOldDelete.vb" />
+    <Compile Include="Source\Commands\Add Tank Commands\AF.vb" />
+    <Compile Include="Source\Commands\Add Tank Commands\AP.vb" />
+    <Compile Include="Source\Commands\Add Tank Commands\AT.vb" />
+    <Compile Include="Source\Commands\Add Tank Commands\AC.vb" />
+    <Compile Include="Source\Commands\Kitchen\CK.vb" />
+    <Compile Include="Source\Commands\Kitchen\KR.vb" />
+    <Compile Include="Source\Commands\Kitchen\WK.vb" />
+    <Compile Include="Source\Commands\Look Ahead\LA.vb" />
+    <Compile Include="Source\Commands\Look Ahead\LS.vb" />
+    <Compile Include="Source\Commands\Machine\RC.vb" />
+    <Compile Include="Source\Commands\Machine\HD.vb" />
+    <Compile Include="Source\Commands\Machine\HC.vb" />
+    <Compile Include="Source\Commands\Flow Control\FL.vb" />
+    <Compile Include="Source\Commands\Machine\PR.vb" />
+    <Compile Include="Source\Commands\Flow Control\CC.vb" />
+    <Compile Include="Source\Commands\Machine\TC.vb" />
+    <Compile Include="Source\Commands\Reports\BO.vb" />
+    <Compile Include="Source\Commands\Reports\BR.vb" />
+    <Compile Include="Source\Commands\Reserve Tank\RT.vb" />
+    <Compile Include="Source\Commands\Reserve Tank\RP.vb" />
+    <Compile Include="Source\Commands\Machine\RH.vb" />
+    <Compile Include="Source\Commands\Reserve Tank\RF.vb" />
+    <Compile Include="Source\Commands\Reserve Tank\RD.vb" />
+    <Compile Include="Source\Commands\Batch Commands\BW.vb" />
+    <Compile Include="Source\Commands\Batch Commands\HL.vb" />
+    <Compile Include="Source\Commands\Batch Commands\PT.vb" />
+    <Compile Include="Source\Commands\Flow Control\FP.vb" />
+    <Compile Include="Source\Commands\Flow Control\FC.vb" />
+    <Compile Include="Source\Commands\Batch Commands\NP.vb" />
+    <Compile Include="Source\Commands\Flow Control\DP.vb" />
+    <Compile Include="Source\Commands\Reserve Tank\RW.vb" />
+    <Compile Include="Source\Commands\Temperature\CO.vb" />
+    <Compile Include="Source\Commands\Operator\UL.vb" />
+    <Compile Include="Source\Commands\Machine\TM.vb" />
+    <Compile Include="Source\Commands\Operator\SA.vb" />
+    <Compile Include="Source\Commands\Machine\RI.vb" />
+    <Compile Include="Source\Commands\Operator\PH.vb" />
+    <Compile Include="Source\Commands\Operator\LD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Commands\Kitchen\KP.vb" />
+    <Compile Include="Source\Commands\Kitchen\KA.vb" />
+    <Compile Include="Source\Commands\Flow Control\FR.vb" />
+    <Compile Include="Source\Commands\Machine\DR.vb" />
+    <Compile Include="Source\Commands\Reports\ET.vb" />
+    <Compile Include="Source\Commands\Machine\FI.vb" />
+    <Compile Include="Source\Commands\Temperature\HE.vb" />
+    <Compile Include="Source\Commands\Temperature\TP.vb" />
+    <Compile Include="Source\Commands\Temperature\WT.vb" />
+    <Compile Include="Source\Common\LidControl.vb" />
+    <Compile Include="Source\Common\Memo.vb" />
+    <Compile Include="Source\Common\Settings\Settings.vb" />
+    <Compile Include="Source\Commands\Kitchen\Tank1Prepare.vb" />
+    <Compile Include="Source\Commands\Add Tank Commands\AddControl.vb" />
+    <Compile Include="Source\Common\ManualSteamTest.vb" />
+    <Compile Include="Source\Common\PumpControl.vb" />
+    <Compile Include="Source\Common\ReserveControl.vb" />
+    <Compile Include="Source\Common\Flasher.vb" />
+    <Compile Include="Source\Common\Globals.vb" />
+    <Compile Include="Source\Common\Pid.vb" />
+    <Compile Include="Source\Common\SafetyControl.vb" />
+    <Compile Include="Source\Common\SmoothingOld.vb" />
+    <Compile Include="Source\Common\Tables.vb" />
+    <Compile Include="Source\Common\Temperature.vb" />
+    <Compile Include="Source\Common\Ticker.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.Translations.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.Color.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.Conversions.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.Draw.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.Programs.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.Sql.vb" />
+    <Compile Include="Source\Common\TODO\ToDelete.vb" />
+    <Compile Include="Source\ControlCode\Alarms.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.DrawScreen.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.KitchenPreview.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.Remote.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.Status.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.Utilities.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.Delays.vb" />
+    <Compile Include="Source\ControlCode\ControlCodevb6.vb" />
+    <Compile Include="Source\ControlCode\ControlCodeVB6Delete.vb" />
+    <Compile Include="Source\ControlCode\KitchenPreviewDelete.vb" />
+    <Compile Include="Source\ControlCode\Parameters.vb" />
+    <Compile Include="Source\IO\PhoenixTrio.vb" />
+    <Compile Include="Source\Recipe.vb" />
+    <Compile Include="Source\System\Control.vb" />
+    <Compile Include="Source\System\Support.vb" />
+    <Compile Include="Source\User Interface\Mimic\Mimic.Designer.vb">
+      <DependentUpon>Mimic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\Mimic.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlButtonClose.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlButtonNoFocus.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlDataRowEdit.Designer.vb">
+      <DependentUpon>ControlDataRowEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlDataRowEdit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlDataRowEditNew.Designer.vb">
+      <DependentUpon>ControlDataRowEditNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlDataRowEditNew.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlKeyboard.Designer.vb">
+      <DependentUpon>ControlKeyboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlKeyboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlNumberPad.Designer.vb">
+      <DependentUpon>ControlNumberPad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlNumberPad.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\DataGridViewX.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\KeysNumeric.Designer.vb">
+      <DependentUpon>KeysNumeric.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\KeysNumeric.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\KeysQwerty.Designer.vb">
+      <DependentUpon>KeysQwerty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\KeysQwerty.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\ListViewBuffered.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\OverviewContainerClose.vb" />
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Controls\TextBoxX.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Forms\FormNumberPad.Designer.vb">
+      <DependentUpon>FormNumberPad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Forms\FormNumberPad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Forms\FormNumeric.Designer.vb">
+      <DependentUpon>FormNumeric.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Forms\FormNumeric.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Forms\FormQwerty.Designer.vb">
+      <DependentUpon>FormQwerty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\Forms\FormQwerty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicDevice.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicDeviceMixer.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicDevicePump.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicDeviceValve.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicFlowmeter.Designer.vb">
+      <DependentUpon>MimicFlowmeter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicFlowmeter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicLevelIndicator.Designer.vb">
+      <DependentUpon>MimicLevelIndicator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicLevelIndicator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicOverrides.vb" />
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicProgressBar.Designer.vb">
+      <DependentUpon>MimicProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicProgressBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicCommon\MimicValveDispense.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Mimic\MimicControls.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.Commands.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.Variables.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.vb" />
+    <Compile Include="Source\User Interface\0Common\Controls\UserControlKeypad.Designer.vb">
+      <DependentUpon>UserControlKeypad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\UserControlKeypad.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\Common\Enums.vb" />
+    <Compile Include="Source\User Interface\0Common\Forms\FormPassword.Designer.vb">
+      <DependentUpon>FormPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Forms\FormPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\IO\IO.vb" />
+    <Compile Include="Source\IO\Modbus.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Source\IO\Ports.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.Calibrate.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.GetCommandNotes.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.GetTimeBeforeHD.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.Log.vb" />
+    <Compile Include="Source\Common\Utilities\Utilities.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Source\User Interface\0Common\Controls\UserControlKeypad.resx">
+      <DependentUpon>UserControlKeypad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\0Common\Forms\FormPassword.resx">
+      <DependentUpon>FormPassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Mimic\Mimic.resx">
+      <DependentUpon>Mimic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlDataRowEdit.resx">
+      <DependentUpon>ControlDataRowEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlDataRowEditNew.resx">
+      <DependentUpon>ControlDataRowEditNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Mimic\MimicCommon\Controls\ControlNumberPad.resx">
+      <DependentUpon>ControlNumberPad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Mimic\MimicCommon\Controls\KeysQwerty.resx">
+      <DependentUpon>KeysQwerty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Mimic\MimicCommon\Forms\FormNumberPad.resx">
+      <DependentUpon>FormNumberPad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Mimic\MimicCommon\Forms\FormNumeric.resx">
+      <DependentUpon>FormNumeric.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Mimic\MimicCommon\Forms\FormQwerty.resx">
+      <DependentUpon>FormQwerty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Mimic\MimicCommon\MimicFlowmeter.resx">
+      <DependentUpon>MimicFlowmeter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WorkList16x16.png" />
+    <None Include="Resources\WarningSmall16x16.png" />
+    <None Include="Resources\WarningButton16x16.png" />
+    <None Include="Resources\Warning24x24.png" />
+    <None Include="Resources\Warning16x16.png" />
+    <None Include="Resources\Alarm16x16.png" />
+    <None Include="Resources\ArrowToRight24x24.png" />
+    <None Include="Resources\BarCode16x16.png" />
+    <None Include="Resources\Bespoke16x16.png" />
+    <None Include="Resources\Blocked16x16.png" />
+    <None Include="Resources\Cancel16x16.png" />
+    <None Include="Resources\Checkmark16x16.png" />
+    <None Include="Resources\CheckmarkThin16x16.png" />
+    <None Include="Resources\DeleteRed16x16.png" />
+    <None Include="Resources\Drain16x16.png" />
+    <None Include="Resources\Drain24x24.png" />
+    <Content Include="Resources\FlowmeterOff.png" />
+    <Content Include="Resources\FlowmeterOn.png" />
+    <None Include="Resources\Hammer24x24.png" />
+    <None Include="Resources\Hand16x16.png" />
+    <None Include="Resources\Hold16x16.png" />
+    <None Include="Resources\IO16x16.png" />
+    <None Include="Resources\LDU16x16.png" />
+    <None Include="Resources\Link16x16.png" />
+    <None Include="Resources\Minus16x16.png" />
+    <Content Include="Resources\MixerBladeOff.png" />
+    <Content Include="Resources\MixerBladeOn.png" />
+    <Content Include="Resources\MixerMotorOff.png" />
+    <Content Include="Resources\MixerMotorOffFuzzy.png" />
+    <Content Include="Resources\MixerMotorOn.png" />
+    <Content Include="Resources\MixerMotorOnFuzzy.png" />
+    <None Include="Resources\MixTanks16x16.png" />
+    <None Include="Resources\MoveFirst16x16.png" />
+    <None Include="Resources\MoveLast16x16.png" />
+    <None Include="Resources\MoveNext16x16.png" />
+    <None Include="Resources\MovePrevious16x16.png" />
+    <None Include="Resources\NewDocument16x16.png" />
+    <None Include="Resources\Okay16x16.png" />
+    <None Include="Resources\Okay24x24.png" />
+    <None Include="Resources\OverviewContainerClose.bmp" />
+    <None Include="Resources\Patch16x16.png" />
+    <None Include="Resources\Pause16x16.png" />
+    <None Include="Resources\Play16x16.png" />
+    <None Include="Resources\PlayBlue16x16.png" />
+    <None Include="Resources\PlayGreen16x16.png" />
+    <None Include="Resources\Plus16x16.png" />
+    <None Include="Resources\Products16x16.png" />
+    <Content Include="Resources\PumpOff.png" />
+    <Content Include="Resources\PumpOn.png" />
+    <None Include="Resources\Recipes16x16.png" />
+    <None Include="Resources\Refresh16x16.png" />
+    <None Include="Resources\Reset16x16.png" />
+    <None Include="Resources\RestartJob16x16.png" />
+    <None Include="Resources\RestartJob24x24.png" />
+    <None Include="Resources\Retry16x16.png" />
+    <None Include="Resources\Retry24x24.png" />
+    <None Include="Resources\Run16x16.png" />
+    <None Include="Resources\RunTanks16x16.png" />
+    <None Include="Resources\Save16x16.png" />
+    <None Include="Resources\StepOver24x24.png" />
+    <None Include="Resources\Stop16x16.png" />
+    <None Include="Resources\tap-water-icon24x24.png" />
+    <Content Include="Resources\ThenPlatform_AEMXN.png" />
+    <Content Include="Resources\ValveError.png" />
+    <Content Include="Resources\ValveHorizontalError.png" />
+    <Content Include="Resources\ValveHorizontalOff.png" />
+    <Content Include="Resources\ValveHorizontalOn.png" />
+    <Content Include="Resources\ValveHorizontalPartial.png" />
+    <Content Include="Resources\ValveHorizontalPartialError.png" />
+    <Content Include="Resources\ValveOff.png" />
+    <Content Include="Resources\ValveOn .png" />
+    <Content Include="Resources\ValvePartial.png" />
+    <Content Include="Resources\ValvePartialError.png" />
+    <Content Include="Resources\ValveVerticalError.png" />
+    <Content Include="Resources\ValveVerticalOff.png" />
+    <Content Include="Resources\ValveVerticalOn.png" />
+    <Content Include="Resources\ValveVerticalPartial.png" />
+    <Content Include="Resources\ValveVerticalPartialError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Source\0Extras\" />
+    <Folder Include="Source\User Interface\Mimic\Drawings\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
